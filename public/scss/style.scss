@@ -81,7 +81,7 @@ $text-color-primary: #1c1c1c;
 }
 
 html {
-  
+  min-width: 100vw;
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
 
     // @include respond(desktop-xl) {
@@ -149,16 +149,31 @@ body {
   text-decoration: none;
   border: solid 1.75px transparent;
   border-radius: 2px;
+  transition: all .2s ease-in-out;
+  transition-property: background-color, color, border-color;
  
   &-primary {
    color: #FFF;
    background-color: $green-primary;
    border-color: $green-primary;
+
+   &:hover,
+   &:focus {
+     background-color: $green-light;
+     border-color: $green-light;
+   }
  
    &-outlined {
     background-color: transparent;
     color: $green-primary;
     border-color: $green-primary;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $green-light;
+      border-color: $green-light;
+    }
    }
   }
 
@@ -168,6 +183,12 @@ body {
       background-color: #FFF;
       color: #2678e5;
       border: solid 2px #2678e5;
+
+      &:hover,
+      &:focus {
+        background-color: #2678e5;
+        color: #fff;
+      }
     }
   }
 
@@ -290,9 +311,7 @@ body {
         margin-right: 3.7rem;
         height: 3.7rem;
   
-        @include respond(desktop-md) {
-          margin-right: auto;
-        }
+        
       }
 
       & .link {
@@ -309,6 +328,9 @@ body {
       }
 
       & .burger {
+        @include respond(desktop-md) {
+          margin-left: auto;
+        }
         & svg {
           cursor: pointer;
           color: #232324;
@@ -475,6 +497,10 @@ body {
     font-weight: 600;
     line-height: 1.25;
     color: #202124;
+
+    @include respond(desktop-xsm) {
+      font-size: 4.6rem;
+    }
   }
 
   &-subtitle {
@@ -561,18 +587,28 @@ body {
       margin-bottom: 3rem;
       height: 43.5rem;
       border-radius: 17px;
-      //box-shadow: 0 6px 12px 0 rgba(85, 85, 85, 0.1);
       border: 1.2rem solid rgba(243, 243, 243, 0.6);
+
+      @include respond(desktop-xsm) {
+        height: auto;
+        width: 60%;
+      }
+
+      @include respond(desktop-xxsm) {
+        width: 70%;
+      }
     }
 
     &-body {
       max-width: 31.7rem;
 
       @include respond(desktop-md) {
+        max-width: 38rem;
         margin-left: 5rem;
       }
 
       @include respond(desktop-xsm) {
+        max-width: 80%;
         margin-right: 0!important;
         margin-left: 0!important;
       }
@@ -621,7 +657,7 @@ body {
       max-width: 61.2rem;
 
       @include respond(desktop-md) {
-        max-width: 50%;
+        max-width: 38rem;
       }
 
       @include respond(desktop-xsm) {
@@ -633,7 +669,12 @@ body {
       max-width: 35.4rem;
       margin-left: 5rem;
 
+      @include respond(desktop-md) {
+        max-width: 38rem;
+      }
+
       @include respond(desktop-xsm) {
+        max-width: 80%;
         margin-top: 5rem;
         margin-left: 0;
       }
@@ -726,7 +767,7 @@ body {
     display: flex;
     align-items: flex-start;
 
-    @include respond(desktop-sm) {
+    @include respond(desktop-md) {
       justify-content: space-between;
     }
     
@@ -741,7 +782,7 @@ body {
       margin-right: 7rem;
       list-style: none;
 
-      @include respond(desktop-sm) {
+      @include respond(desktop-md) {
         margin-right: 4rem;
         min-width: auto;
       }
@@ -769,6 +810,12 @@ body {
           font-weight: 400;
           line-height: 1.86;
           color: #8b8b8b;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -815,9 +862,15 @@ body {
       &-link {
         color: #333;
         font-size: 3rem;
+        transition: color .2s ease-in-out;
 
         &:not(:last-of-type) {
           margin-right: 1rem;
+        }
+
+        &:hover,
+        &:focus {
+          color: $green-primary
         }
       }
     }
