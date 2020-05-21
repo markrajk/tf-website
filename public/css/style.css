@@ -792,17 +792,22 @@ body {
     font-weight: 400;
     line-height: 1.3; }
 .main.features .section-cards {
-  padding-top: 13rem;
-  padding-bottom: 16rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: center; }
   @media (max-width: 991px) {
     .main.features .section-cards {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
   .main.features .section-cards-card {
     margin: 5%;
     text-align: center; }
+    @media (max-width: 991px) {
+      .main.features .section-cards-card {
+        flex-wrap: wrap;
+        justify-content: space-evenly; } }
     .main.features .section-cards-card-title {
       margin-bottom: 1.4rem;
       font-size: 2.6rem;

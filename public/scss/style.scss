@@ -1221,19 +1221,28 @@ body {
 
   // SECTION CARDS
   & .section-cards {
-    padding-top: 13rem;
-    padding-bottom: 16rem;
+    // padding-top: 13rem;
+    // padding-bottom: 16rem;
+
+    padding-top: 7rem;
+    padding-bottom: 10rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     
     @include respond(desktop-md) {
       flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     &-card {
-      margin: 5%;
+      margin: 5%;   
       text-align: center;
+
+      @include respond(desktop-md) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
 
       &-title {
         margin-bottom: 1.4rem;
