@@ -55,7 +55,7 @@ if (subheader) {
 
     if (scrollDown) {
       // header.style.display = 'none';
-      body.style.paddingTop = '7.05rem';
+      //body.style.paddingTop = '7.05rem';
       header.classList.add('move-up');
       subheader.style.top = '0';
       subheader.style.boxShadow = '0 3px 5px 0 rgba(0,0,0,.1)';
