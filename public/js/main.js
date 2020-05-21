@@ -54,25 +54,23 @@ if (subheader) {
     }
 
     if (scrollDown) {
+      // header.style.display = 'none';
       body.style.paddingTop = '7.05rem';
-      header.style.display = 'none';
+      header.classList.add('move-up');
       subheader.style.top = '0';
       subheader.style.boxShadow = '0 3px 5px 0 rgba(0,0,0,.1)';
       subheader.style.borderBottom = 'none';
-      console.log(scrollPositionY);
     } else {
       body.style.paddingTop = '0';
-      header.style.display = 'block';
+      // header.style.display = 'block';
+      header.classList.remove('move-up');
       subheader.style.top = '7.05rem';
-      console.log(scrollPositionY);
     }
 
     if (scrollPositionY < 10) {
       subheader.style.boxShadow = 'none';
       subheader.style.borderBottom = '1.5px solid #F4F4F4';
     }
-
-    console.log(scrollPositionY);
   });
 }
 function disableScrolling() {
