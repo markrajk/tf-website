@@ -284,266 +284,268 @@ body {
       display: flex;
       width: 100%; }
 
-.main.overview .section-hero {
-  padding-top: 7rem;
-  padding-bottom: 9rem;
-  text-align: center; }
-  @media (max-width: 575px) {
-    .main.overview .section-hero {
-      padding-top: 3.6rem;
-      padding-bottom: 3.8rem; } }
-  .main.overview .section-hero-logo {
-    margin-bottom: 3.3rem; }
-    .main.overview .section-hero-logo-img {
-      height: 5.3rem; }
+.main.overview {
+  padding-top: 7.05rem; }
+  .main.overview .section-hero {
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+    text-align: center; }
     @media (max-width: 575px) {
-      .main.overview .section-hero-logo {
-        margin-bottom: 1rem; }
-        .main.overview .section-hero-logo-img {
-          height: 4.78rem; } }
-  .main.overview .section-hero-title {
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
-    max-width: 79rem;
-    font-size: 5.1rem;
-    font-weight: 600;
-    line-height: 1.25;
-    color: #202124; }
-    @media (max-width: 575px) {
-      .main.overview .section-hero-title {
-        margin-bottom: 2rem;
-        max-width: 29.8rem;
-        font-size: 2.8rem;
-        font-weight: 600;
-        line-height: 1.21;
-        letter-spacing: -0.98px;
-        color: #1c1c1c; } }
-  .main.overview .section-hero-subtitle {
-    margin-bottom: 3.5rem;
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #5f6368; }
-    @media (max-width: 575px) {
-      .main.overview .section-hero-subtitle {
-        margin: 0 auto;
-        margin-bottom: 2.8rem;
-        max-width: 30rem;
-        font-size: 1.5rem;
-        line-height: 1.47;
-        letter-spacing: 0.15px;
-        color: #65696d; } }
-  .main.overview .section-hero .btn {
-    font-size: 1.7rem;
-    margin-bottom: .8rem; }
-    @media (max-width: 575px) {
-      .main.overview .section-hero .btn {
-        margin-bottom: 1.6rem;
-        font-size: 1.8rem;
-        display: flex; } }
-  .main.overview .section-hero-info {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #423f3f; }
-    @media (max-width: 575px) {
-      .main.overview .section-hero-info {
-        font-size: 1.4rem; } }
-.main.overview .section-info {
-  margin-left: 5.8rem;
-  margin-right: 6.1rem;
-  padding-top: 4.7rem;
-  padding-bottom: 7.25rem;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1.5px solid #F2F0F2;
-  border-bottom: 1.5px solid #F2F0F2; }
-  @media (max-width: 991px) {
-    .main.overview .section-info {
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-left: 0;
-      margin-right: 0; } }
-  @media (max-width: 575px) {
-    .main.overview .section-info {
-      padding-top: 3.25rem;
-      padding-bottom: 0;
-      border-bottom: none; } }
-  .main.overview .section-info-card {
-    max-width: 31.7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .main.overview .section-info-card:not(:last-of-type) {
-      margin-right: 5rem; }
-      @media (max-width: 991px) {
-        .main.overview .section-info-card:not(:last-of-type) {
-          margin-bottom: 5rem; } }
+      .main.overview .section-hero {
+        padding-top: 3.6rem;
+        padding-bottom: 3.8rem; } }
+    .main.overview .section-hero-logo {
+      margin-bottom: 3.3rem; }
+      .main.overview .section-hero-logo-img {
+        height: 5.3rem; }
       @media (max-width: 575px) {
-        .main.overview .section-info-card:not(:last-of-type) {
-          margin-bottom: 6.2rem; } }
-    @media (max-width: 991px) {
-      .main.overview .section-info-card {
-        flex-direction: row;
-        max-width: 100%;
-        margin-right: 0 !important; }
-        .main.overview .section-info-card:nth-of-type(even) {
-          flex-direction: row-reverse; }
-          .main.overview .section-info-card:nth-of-type(even) .section-info-card-body {
-            margin-left: 0;
-            margin-right: 5rem; } }
-    @media (max-width: 575px) {
-      .main.overview .section-info-card {
-        flex-direction: column; }
-        .main.overview .section-info-card:nth-of-type(even) {
-          flex-direction: column; } }
-    .main.overview .section-info-card-img {
+        .main.overview .section-hero-logo {
+          margin-bottom: 1rem; }
+          .main.overview .section-hero-logo-img {
+            height: 4.78rem; } }
+    .main.overview .section-hero-title {
       margin: 0 auto;
-      margin-bottom: 3rem;
-      height: 43.5rem;
-      border-radius: 17px;
-      border: 1.2rem solid rgba(243, 243, 243, 0.6); }
+      margin-bottom: 2.5rem;
+      max-width: 79rem;
+      font-size: 5.1rem;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #202124; }
       @media (max-width: 575px) {
-        .main.overview .section-info-card-img {
-          margin-bottom: 4rem;
-          height: 35rem; } }
-    .main.overview .section-info-card-body {
-      max-width: 31.7rem; }
-      @media (max-width: 991px) {
-        .main.overview .section-info-card-body {
-          max-width: 38rem;
-          margin-left: 5rem; } }
-      @media (max-width: 575px) {
-        .main.overview .section-info-card-body {
-          max-width: 90%;
-          align-self: flex-start;
-          margin-right: 0 !important;
-          margin-left: 0 !important; } }
-    .main.overview .section-info-card-title {
-      margin-bottom: 2rem;
+        .main.overview .section-hero-title {
+          margin-bottom: 2rem;
+          max-width: 29.8rem;
+          font-size: 2.8rem;
+          font-weight: 600;
+          line-height: 1.21;
+          letter-spacing: -0.98px;
+          color: #1c1c1c; } }
+    .main.overview .section-hero-subtitle {
+      margin-bottom: 3.5rem;
       font-size: 2.2rem;
-      font-weight: 600;
-      line-height: 1.36;
-      color: #000000; }
-    .main.overview .section-info-card-text {
-      margin-bottom: 2.1rem;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.55rem;
       font-weight: 400;
-      line-height: 1.66;
       color: #5f6368; }
-    .main.overview .section-info-card .btn {
-      align-self: flex-start; }
-.main.overview .section-dashboard {
-  padding-top: 9.25rem;
-  padding-bottom: 9rem; }
-  @media (max-width: 575px) {
-    .main.overview .section-dashboard {
-      padding-top: 6.2rem;
-      padding-bottom: 6.2rem; } }
-  .main.overview .section-dashboard-card {
-    margin: 0 auto;
+      @media (max-width: 575px) {
+        .main.overview .section-hero-subtitle {
+          margin: 0 auto;
+          margin-bottom: 2.8rem;
+          max-width: 30rem;
+          font-size: 1.5rem;
+          line-height: 1.47;
+          letter-spacing: 0.15px;
+          color: #65696d; } }
+    .main.overview .section-hero .btn {
+      font-size: 1.7rem;
+      margin-bottom: .8rem; }
+      @media (max-width: 575px) {
+        .main.overview .section-hero .btn {
+          margin-bottom: 1.6rem;
+          font-size: 1.8rem;
+          display: flex; } }
+    .main.overview .section-hero-info {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #423f3f; }
+      @media (max-width: 575px) {
+        .main.overview .section-hero-info {
+          font-size: 1.4rem; } }
+  .main.overview .section-info {
+    margin-left: 5.8rem;
+    margin-right: 6.1rem;
+    padding-top: 4.7rem;
+    padding-bottom: 7.25rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 101.9rem; }
+    justify-content: space-between;
+    border-top: 1.5px solid #F2F0F2;
+    border-bottom: 1.5px solid #F2F0F2; }
+    @media (max-width: 991px) {
+      .main.overview .section-info {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0; } }
     @media (max-width: 575px) {
-      .main.overview .section-dashboard-card {
-        flex-direction: column; } }
-    .main.overview .section-dashboard-card-img {
-      max-width: 61.2rem; }
+      .main.overview .section-info {
+        padding-top: 3.25rem;
+        padding-bottom: 0;
+        border-bottom: none; } }
+    .main.overview .section-info-card {
+      max-width: 31.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main.overview .section-info-card:not(:last-of-type) {
+        margin-right: 5rem; }
+        @media (max-width: 991px) {
+          .main.overview .section-info-card:not(:last-of-type) {
+            margin-bottom: 5rem; } }
+        @media (max-width: 575px) {
+          .main.overview .section-info-card:not(:last-of-type) {
+            margin-bottom: 6.2rem; } }
       @media (max-width: 991px) {
-        .main.overview .section-dashboard-card-img {
-          max-width: 38rem; } }
+        .main.overview .section-info-card {
+          flex-direction: row;
+          max-width: 100%;
+          margin-right: 0 !important; }
+          .main.overview .section-info-card:nth-of-type(even) {
+            flex-direction: row-reverse; }
+            .main.overview .section-info-card:nth-of-type(even) .section-info-card-body {
+              margin-left: 0;
+              margin-right: 5rem; } }
       @media (max-width: 575px) {
-        .main.overview .section-dashboard-card-img {
-          max-width: 100%; } }
-    .main.overview .section-dashboard-card-body {
-      max-width: 35.4rem;
-      margin-left: 5rem; }
-      @media (max-width: 991px) {
-        .main.overview .section-dashboard-card-body {
-          max-width: 38rem; } }
+        .main.overview .section-info-card {
+          flex-direction: column; }
+          .main.overview .section-info-card:nth-of-type(even) {
+            flex-direction: column; } }
+      .main.overview .section-info-card-img {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        height: 43.5rem;
+        border-radius: 17px;
+        border: 1.2rem solid rgba(243, 243, 243, 0.6); }
+        @media (max-width: 575px) {
+          .main.overview .section-info-card-img {
+            margin-bottom: 4rem;
+            height: 35rem; } }
+      .main.overview .section-info-card-body {
+        max-width: 31.7rem; }
+        @media (max-width: 991px) {
+          .main.overview .section-info-card-body {
+            max-width: 38rem;
+            margin-left: 5rem; } }
+        @media (max-width: 575px) {
+          .main.overview .section-info-card-body {
+            max-width: 90%;
+            align-self: flex-start;
+            margin-right: 0 !important;
+            margin-left: 0 !important; } }
+      .main.overview .section-info-card-title {
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.36;
+        color: #000000; }
+      .main.overview .section-info-card-text {
+        margin-bottom: 2.1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.55rem;
+        font-weight: 400;
+        line-height: 1.66;
+        color: #5f6368; }
+      .main.overview .section-info-card .btn {
+        align-self: flex-start; }
+  .main.overview .section-dashboard {
+    padding-top: 9.25rem;
+    padding-bottom: 9rem; }
+    @media (max-width: 575px) {
+      .main.overview .section-dashboard {
+        padding-top: 6.2rem;
+        padding-bottom: 6.2rem; } }
+    .main.overview .section-dashboard-card {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 101.9rem; }
       @media (max-width: 575px) {
-        .main.overview .section-dashboard-card-body {
-          align-self: flex-start;
-          max-width: 95%;
-          margin-top: 2.4rem;
-          margin-left: 0; } }
-    .main.overview .section-dashboard-card-title {
-      margin-bottom: 2.4rem;
-      font-size: 3rem;
+        .main.overview .section-dashboard-card {
+          flex-direction: column; } }
+      .main.overview .section-dashboard-card-img {
+        max-width: 61.2rem; }
+        @media (max-width: 991px) {
+          .main.overview .section-dashboard-card-img {
+            max-width: 38rem; } }
+        @media (max-width: 575px) {
+          .main.overview .section-dashboard-card-img {
+            max-width: 100%; } }
+      .main.overview .section-dashboard-card-body {
+        max-width: 35.4rem;
+        margin-left: 5rem; }
+        @media (max-width: 991px) {
+          .main.overview .section-dashboard-card-body {
+            max-width: 38rem; } }
+        @media (max-width: 575px) {
+          .main.overview .section-dashboard-card-body {
+            align-self: flex-start;
+            max-width: 95%;
+            margin-top: 2.4rem;
+            margin-left: 0; } }
+      .main.overview .section-dashboard-card-title {
+        margin-bottom: 2.4rem;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.17;
+        color: #000000; }
+        @media (max-width: 575px) {
+          .main.overview .section-dashboard-card-title {
+            max-width: 80%;
+            margin-bottom: 1.8rem;
+            font-size: 2.2rem;
+            line-height: 1.36; } }
+      .main.overview .section-dashboard-card-text {
+        margin-bottom: 2.1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.55rem;
+        font-weight: 400;
+        line-height: 1.68;
+        color: #5f6368; }
+  .main.overview .section-banner-wrapper {
+    padding-top: 7.7rem;
+    padding-bottom: 10rem;
+    background-color: #fafafa; }
+    @media (max-width: 575px) {
+      .main.overview .section-banner-wrapper {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem; } }
+  .main.overview .section-banner {
+    text-align: center; }
+    .main.overview .section-banner-logo {
+      margin-bottom: 1.7rem;
+      width: 5.3rem; }
+      @media (max-width: 575px) {
+        .main.overview .section-banner-logo {
+          margin-bottom: 1.1rem;
+          width: 4.7rem; } }
+    .main.overview .section-banner-title {
+      margin-bottom: 1.6rem;
+      font-size: 4rem;
       font-weight: 600;
-      line-height: 1.17;
+      line-height: 1.25;
+      letter-spacing: -0.28px;
       color: #000000; }
       @media (max-width: 575px) {
-        .main.overview .section-dashboard-card-title {
-          max-width: 80%;
-          margin-bottom: 1.8rem;
-          font-size: 2.2rem;
-          line-height: 1.36; } }
-    .main.overview .section-dashboard-card-text {
-      margin-bottom: 2.1rem;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.55rem;
+        .main.overview .section-banner-title {
+          margin-bottom: 1.2rem;
+          font-size: 2.6rem;
+          font-weight: 600;
+          letter-spacing: -0.91px;
+          color: #1c1c1c; } }
+    .main.overview .section-banner-text {
+      margin: 0 auto;
+      margin-bottom: 3.4rem;
+      max-width: 62.2rem;
+      font-size: 1.8rem;
       font-weight: 400;
-      line-height: 1.68;
-      color: #5f6368; }
-.main.overview .section-banner-wrapper {
-  padding-top: 7.7rem;
-  padding-bottom: 10rem;
-  background-color: #fafafa; }
-  @media (max-width: 575px) {
-    .main.overview .section-banner-wrapper {
-      padding-top: 5.5rem;
-      padding-bottom: 5.5rem; } }
-.main.overview .section-banner {
-  text-align: center; }
-  .main.overview .section-banner-logo {
-    margin-bottom: 1.7rem;
-    width: 5.3rem; }
-    @media (max-width: 575px) {
-      .main.overview .section-banner-logo {
-        margin-bottom: 1.1rem;
-        width: 4.7rem; } }
-  .main.overview .section-banner-title {
-    margin-bottom: 1.6rem;
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: -0.28px;
-    color: #000000; }
-    @media (max-width: 575px) {
-      .main.overview .section-banner-title {
-        margin-bottom: 1.2rem;
-        font-size: 2.6rem;
-        font-weight: 600;
-        letter-spacing: -0.91px;
-        color: #1c1c1c; } }
-  .main.overview .section-banner-text {
-    margin: 0 auto;
-    margin-bottom: 3.4rem;
-    max-width: 62.2rem;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.44;
-    color: #2f2f2f; }
-    @media (max-width: 575px) {
-      .main.overview .section-banner-text {
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-        line-height: 1.6; } }
-  .main.overview .section-banner .btn {
-    border-radius: 4px;
-    padding: .75rem 1.7rem;
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem; }
-    @media (max-width: 575px) {
-      .main.overview .section-banner .btn {
-        margin-bottom: 0; } }
-  .main.overview .section-banner-info {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #423f3f; }
+      line-height: 1.44;
+      color: #2f2f2f; }
+      @media (max-width: 575px) {
+        .main.overview .section-banner-text {
+          margin-bottom: 2rem;
+          font-size: 1.5rem;
+          line-height: 1.6; } }
+    .main.overview .section-banner .btn {
+      border-radius: 4px;
+      padding: .75rem 1.7rem;
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem; }
+      @media (max-width: 575px) {
+        .main.overview .section-banner .btn {
+          margin-bottom: 0; } }
+    .main.overview .section-banner-info {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #423f3f; }
 
 .footer-wrapper {
   border-top: 1.5px solid #F2F0F2; }
