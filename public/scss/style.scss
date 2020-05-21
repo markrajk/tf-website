@@ -84,28 +84,28 @@ html {
   min-width: 100vw;
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
 
-    @include respond(desktop-xl) {
-      font-size: 60%;
-    }
+    // @include respond(desktop-xl) {
+    //   font-size: 60%;
+    // }
 
-    @include respond(desktop-lg) {
-      font-size: 57.5%;
-    }
+    // @include respond(desktop-lg) {
+    //   font-size: 57.5%;
+    // }
 
-    @include respond(desktop-md) {
-      font-size: 55%;
-    }
+    // @include respond(desktop-md) {
+    //   font-size: 55%;
+    // }
 
-    @include respond(desktop-sm) {
-      font-size: 50%;
-    }
+    // @include respond(desktop-sm) {
+    //   font-size: 50%;
+    // }
 
     // @include respond(desktop-xsm) {
-    //   font-size: 45%;
+    //   font-size: 62.5%;
     // }
 
     @include respond(desktop-xxsm) {
-      font-size: 45%;
+      font-size: 50%;
     }
 }
 
@@ -136,6 +136,10 @@ body {
 
   @include respond(desktop-md) {
     padding: 0 5%;
+  }
+
+  @include respond(desktop-xsm) {
+    padding: 0 3.4rem;
   }
 }
 
@@ -204,7 +208,17 @@ body {
   }
  }
 
-.show-md {
+
+
+.show-xsm-block {
+  display: none;
+
+  @include respond(desktop-xsm) {
+    display: block;
+  }
+}
+
+.show-md-inline-flex {
   display: none;
 
   @include respond(desktop-md) {
@@ -212,7 +226,7 @@ body {
   }
 }
 
-.show-xsm {
+.show-xsm-inline-flex {
   display: none;
 
   @include respond(desktop-xsm) {
@@ -311,7 +325,7 @@ body {
       & .nav-logo {
         margin-left: .3rem;
         margin-right: 3.7rem;
-        height: 3.7rem;
+        height: 3.2rem;
   
         
       }
@@ -336,7 +350,7 @@ body {
         & svg {
           cursor: pointer;
           color: #232324;
-          font-size: 2rem;
+          font-size: 2.3rem;
         }
       }
 
@@ -370,7 +384,7 @@ body {
           text-decoration: none;
           font-size: 1.7rem;
           font-weight: 400;
-          line-height: 3.65;
+          //line-height: 3.65;
           color: #2f2f2f;
           white-space: nowrap;
 
@@ -485,10 +499,25 @@ body {
   padding-bottom: 9rem;
   text-align: center;
 
+  //mobile
+  @include respond(desktop-xsm) {
+    padding-top: 3.6rem;
+    padding-bottom: 3.8rem;
+  }
+
   &-logo {
     margin-bottom: 3.3rem;
     &-img {
       height: 5.3rem;
+    }
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin-bottom: 1rem;
+
+      &-img {
+        height: 4.78rem;
+      }
     }
   }
 
@@ -501,8 +530,15 @@ body {
     line-height: 1.25;
     color: #202124;
 
+    //mobile
     @include respond(desktop-xsm) {
-      font-size: 4.6rem;
+      margin-bottom: 2rem;
+      max-width: 29.8rem;
+      font-size: 2.8rem;
+      font-weight: 600;
+      line-height: 1.21;
+      letter-spacing: -0.98px;
+      color: #1c1c1c;
     }
   }
 
@@ -511,17 +547,40 @@ body {
     font-size: 2.2rem;
     font-weight: 400;
     color: #5f6368;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin: 0 auto;
+      margin-bottom: 2.8rem;
+      max-width: 30rem;
+      font-size: 1.5rem;
+      line-height: 1.47;
+      letter-spacing: 0.15px;
+      color: #65696d;
+    }
   }
 
   & .btn {
     font-size: 1.7rem;
     margin-bottom: .8rem;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin-bottom: 1.6rem;
+      font-size: 1.8rem;
+      display: flex;
+    }
   }
 
   &-info {
     font-size: 1.5rem;
     font-weight: 400;
     color: #423f3f;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -544,6 +603,12 @@ body {
     margin-right: 0;
   }
 
+  @include respond(desktop-xsm) {
+    padding-top: 3.25rem;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
   &-card {
     max-width: 31.7rem;
     display: flex;
@@ -557,8 +622,9 @@ body {
         margin-bottom:  5rem;
       }
 
+      //mobile
       @include respond(desktop-xsm) {
-        margin-bottom:  8rem;
+        margin-bottom:  6.2rem;
       }
     }
 
@@ -593,12 +659,12 @@ body {
       border: 1.2rem solid rgba(243, 243, 243, 0.6);
 
       @include respond(desktop-xsm) {
-        height: auto;
-        width: 60%;
+        margin-bottom: 4rem;
+        height: 35rem;
       }
 
       @include respond(desktop-xxsm) {
-        width: 70%;
+        // width: 70%;
       }
     }
 
@@ -610,8 +676,10 @@ body {
         margin-left: 5rem;
       }
 
+      //mobile
       @include respond(desktop-xsm) {
-        max-width: 80%;
+        max-width: 90%;
+        align-self: flex-start;
         margin-right: 0!important;
         margin-left: 0!important;
       }
@@ -645,6 +713,11 @@ body {
   padding-top: 9.25rem;
   padding-bottom: 9rem;
 
+  @include respond(desktop-xsm) {
+    padding-top: 6.2rem;
+    padding-bottom: 6.2rem;
+  }
+
   &-card {
     margin: 0 auto;
     display: flex;
@@ -663,8 +736,9 @@ body {
         max-width: 38rem;
       }
 
+      //mobile
       @include respond(desktop-xsm) {
-        max-width: 80%;
+        max-width: 100%;
       }
     }
 
@@ -676,9 +750,11 @@ body {
         max-width: 38rem;
       }
 
+      //mobile
       @include respond(desktop-xsm) {
-        max-width: 80%;
-        margin-top: 5rem;
+        align-self: flex-start;
+        max-width: 95%;
+        margin-top: 2.4rem;
         margin-left: 0;
       }
     }
@@ -689,6 +765,14 @@ body {
       font-weight: 600;
       line-height: 1.17;
       color: #000000;
+
+      //mobile
+      @include respond(desktop-xsm) {
+        max-width: 80%;
+        margin-bottom: 1.8rem;
+        font-size: 2.2rem;
+        line-height: 1.36;
+      }
     }
 
     &-text {
@@ -707,6 +791,12 @@ body {
   padding-top: 7.7rem;
   padding-bottom: 10rem;
   background-color: #fafafa;
+
+  //mobile
+  @include respond(desktop-xsm) {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
 }
 
 .section-banner {
@@ -715,6 +805,12 @@ body {
   &-logo {
     margin-bottom: 1.7rem;
     width: 5.3rem;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin-bottom: 1.1rem;
+      width: 4.7rem;
+    }
   }
 
   &-title {
@@ -724,6 +820,15 @@ body {
     line-height: 1.25;
     letter-spacing: -0.28px;
     color: #000000;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin-bottom: 1.2rem;
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.91px;
+      color: #1c1c1c;
+    }
   }
 
   &-text {
@@ -734,6 +839,13 @@ body {
     font-weight: 400;
     line-height: 1.44;
     color: #2f2f2f;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
   }
 
   & .btn {
@@ -741,6 +853,11 @@ body {
     padding: .75rem 1.7rem;
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
+
+    //mobile
+    @include respond(desktop-xsm) {
+      margin-bottom: 0;
+    }
   }
 
   &-info {
@@ -777,7 +894,8 @@ body {
     
 
     @include respond(desktop-xsm) {
-      justify-content: center;
+      margin-bottom: 3.8rem;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
@@ -791,9 +909,10 @@ body {
         min-width: auto;
       }
 
+      //mobile
       @include respond(desktop-xsm) {
         margin-top: 3rem;
-        text-align: center;
+        text-align: left;
         min-width: auto;
         margin-right: 0;
         width: 50%;
@@ -834,6 +953,15 @@ body {
     align-items: center;
     height: 7.5rem;
 
+    //mobile
+    @include respond(desktop-xsm) {
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+
     &-link {
       margin-right: 2.8rem;
       font-size: 1.4rem;
@@ -859,14 +987,23 @@ body {
     &-icons {
       margin-left: auto;
 
+      //mobile
       @include respond(desktop-xsm) {
-        margin: 0 auto;
+        padding-top: 1.9rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
       }
 
       &-link {
         color: #333;
         font-size: 3rem;
         transition: color .2s ease-in-out;
+
+        @include respond(desktop-xsm) {
+          font-size: 2.5rem;
+        }
 
         &:not(:last-of-type) {
           margin-right: 1rem;
@@ -882,6 +1019,11 @@ body {
 
   &-copy-wrapper {
     background-color: #ebeaeb;
+
+    @include respond(desktop-xsm) {
+      padding-top: 2.9rem;
+      padding-bottom: 2.3rem;
+    }
   }
 
   &-copy {
@@ -890,6 +1032,7 @@ body {
     height: 4.1rem;
 
     @include respond(desktop-xsm) {
+      text-align: center;
       justify-content: center;
     }
 
@@ -897,6 +1040,11 @@ body {
       font-size: 1.1rem;
       font-weight: 400;
       color: #454545;
+
+      @include respond(desktop-xsm) {
+        font-size: 1.2rem;
+        line-height: 1.83;
+      }
     }
   }
 }

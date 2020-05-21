@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="171.69746mm"
-   height="23.054171mm"
-   viewBox="0 0 171.69746 23.054171"
+   width="173.02039mm"
+   height="26.455956mm"
+   viewBox="0 0 173.02038 26.455956"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="team-feedback-logo.svg">
+   sodipodi:docname="team-feedback-logo-mobile.svg">
   <defs
      id="defs2">
     <clipPath
@@ -34,8 +34,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="231.00574"
-     inkscape:cy="42.317203"
+     inkscape:cx="236.00573"
+     inkscape:cy="47.317201"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,7 +64,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(84.854472,-171.32411)">
+     transform="translate(86.177388,-169.24524)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot1057"
@@ -82,7 +82,7 @@
        id="g1104"
        transform="translate(4.7247024,7.5595238)">
       <g
-         transform="matrix(0.07684704,0,0,-0.07684704,-93.356339,194.34064)"
+         transform="matrix(0.08818629,0,0,-0.08818629,-95.236599,196.77346)"
          id="g1016">
         <flowRoot
            font-size="40px"
