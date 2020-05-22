@@ -147,7 +147,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.1rem 1.7rem;
+  padding: .9rem 1.8rem;
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -329,8 +329,9 @@ body {
 
       & .nav-logo {
         margin-left: .3rem;
-        margin-right: 3.7rem;
-        height: 3.2rem;
+        margin-right: 3.5rem;
+        margin-bottom: -.2rem;
+        height: 2.9rem;
   
         
       }
@@ -380,7 +381,7 @@ body {
       }
 
       &-item {
-        padding: 0 1.65rem;
+        padding: 0 1.7rem;
 
         @include respond(desktop-md) {
           padding: 0;
@@ -568,7 +569,7 @@ body {
 
   & .btn {
     font-size: 1.7rem;
-    margin-bottom: .8rem;
+    margin-bottom: 1.1rem;
 
     //mobile
     @include respond(desktop-xsm) {
